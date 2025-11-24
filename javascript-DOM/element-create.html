@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+<body>
+    <div id="container" class="content"></div>
+
+    <script>
+        // mengambil id div
+        const content = document.getElementById('container');
+
+        // membuat h1 ke dalam div
+        const title = document.createElement('h1');
+        title.textContent = 'Judul Konten';
+        content.appendChild(title);
+
+        const desc = document.createElement('p');
+        desc.textContent = 'Ini adalah isi konten';
+        content.appendChild(desc);
+
+    </script>
+</body>
+</html>
