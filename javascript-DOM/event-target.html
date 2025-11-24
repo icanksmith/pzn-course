@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Target</title>
+</head>
+<body>
+    <input id="clickMe" type="button" value="Click Me!">
+    <script>
+        const clickMe = document.getElementById('clickMe');
+
+        clickMe.addEventListener('click', function () {
+            clickMe.setAttribute('value', 'You already click me!');
+        })
+    </script>
+</body>
+</html>
