@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout</title>
+</head>
+<body>
+    <script>
+
+        const element = () => {
+            const header = document.createElement('h1');
+            header.textContent = 'Icank Smith';
+
+            document.body.appendChild(header);
+        }
+
+        setTimeout(element, 5000);
+
+    </script>
+</body>
+</html>
